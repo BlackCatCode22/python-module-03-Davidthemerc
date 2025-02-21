@@ -8,3 +8,11 @@ piece = str[ipos+1:]
 value = float(piece)
 print (value)
 # print(value+42.0)
+
+# Can we get a float out of a user created string with a float value?
+newstr = input ('Enter a string with a float value: ')
+print(newstr)
+newpos = newstr.find('.')
+newpiece = newstr[newpos-1:]
+newvalue = float(newpiece)
+print(newvalue)
