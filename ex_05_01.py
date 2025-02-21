@@ -13,5 +13,10 @@ while True :
     num = num + 1
     tot = tot + fval
 
+    # Stringify values for display
+    num=str(num)
+    tot=str(tot)
+
 # print ('ALL DONE')
-print (tot,num,tot/num)
+# print (tot,num,tot/num)
+print ('Total: ' + tot + ' # of Numbers: ' + num + 'Average of Numbers: ' + tot/num )
