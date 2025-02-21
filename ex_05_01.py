@@ -4,10 +4,14 @@ while True :
     sval = input('Enter a number: ')
     if sval == 'done' :
         break
-    fval = float(sval)
-    print (fval)
+    try:
+        fval = float(sval)
+    except:
+        print('Invalid Input!')
+        continue
+    # print (fval)
     num = num + 1
     tot = tot + fval
 
-print ('ALL DONE')
+# print ('ALL DONE')
 print (tot,num,tot/num)
